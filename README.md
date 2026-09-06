@@ -51,9 +51,11 @@ A 2D kinematic representation of the upper arm and forearm segments during activ
 
 ## Technical Overview
 - PID Control Law:
+
 $$
 \tau(t) = K_p e(t) + K_i \int_0^t e(\tau) d\tau + K_d \frac{de(t)}{dt}
 $$
+
 - ​Anti-Windup & Saturation: Torque limits are enforced to guarantee user safety within typical physiological thresholds.
 - Kinematic Model:
     - Segment 1 (Upper Arm): Fixed reference segment.
@@ -67,8 +69,8 @@ git clone https://github.com/amirasadilamouki/Rehabilitation-Elbow-Exoskeleton-C
 
 2. Set up the virtual environment:
 ```bash
-   python -m venv .venv
-   .\.venv\Scripts\activate
+python -m venv .venv
+.\.venv\Scripts\activate
 ```
    
 3. Install requirements and run the scripts in the src/ directory.
